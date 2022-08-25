@@ -261,7 +261,7 @@ if len(attacks)>0:
 new_nodes_distribution = input("Select distribution for new nodes from poisson, binomial, exponential, pareto, degenerate, levy, cauchy & normal (default: poisson): ") or "poisson"
 new_edges_distribution = input("Select distribution for new edges from exponential, uniform, constant & normal (default: exponential): ") or "exponential"
 
-""""
+
 # Output 1 - Graph evolutuion as a GIF
 print("Generating GIF...")
 all_G = modified_barabasi_albert(
@@ -279,7 +279,7 @@ all_G = modified_barabasi_albert(
 save_as_gif(all_G)
 
 display_graph(all_G[cycles-1])
-"""
+
 # Output 2 - Degree distribution in log-log with CI
 print("Calculation degree distribution ...")
 all_G = []
